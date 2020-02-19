@@ -1,0 +1,16 @@
+diff --git a/node_modules/@types/html-to-text/index.d.ts b/node_modules/@types/html-to-text/index.d.ts
+index 8f911df..061a5fe 100644
+--- a/node_modules/@types/html-to-text/index.d.ts
++++ b/node_modules/@types/html-to-text/index.d.ts
+@@ -98,6 +98,11 @@ interface HtmlToTextOptions {
+      *  Set to true to convert to a single newline.
+      */
+     singleNewLineParagraphs?: boolean;
++
++    decodeOptions?: {
++        [key: string]: any;
++        strict: boolean;
++    }
+ }
+ 
+ declare module "html-to-text" {

@@ -1,0 +1,39 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint:recommended", "tslint-eslint-rules", "tslint-config-prettier"],
+  "rules": {
+    "brace-style": [true, "1tbs", { "allowSingleLine": false }],
+    "comment-format": [true, "check-space"],
+    "curly": true,
+    "import-spacing": false,
+    "no-bitwise": false,
+    "no-console": false,
+    "no-duplicate-imports": true,
+    "no-this-assignment": [true, "allow-destructuring"],
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "object-literal-key-quotes": [true, "as-needed"],
+    "object-literal-sort-keys": [true, "ignore-case"],
+    "one-line": false,
+    "only-arrow-functions": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "interface-over-type-literal": false,
+    "prefer-template": true,
+    "ter-computed-property-spacing": true,
+    "triple-equals": true,
+    "variable-name": false
+  },
+  "rulesDirectory": []
+}

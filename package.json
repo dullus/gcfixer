@@ -1,0 +1,46 @@
+{
+  "name": "gcfixer",
+  "version": "0.5.0",
+  "description": "Normalize Geocaching GPX file for Garmin devices",
+  "main": "bin/gcfixer.js",
+  "bin": {
+    "gcfixer": "./bin/gcfixer.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p .",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install",
+    "postinstall": "patch-package",
+    "lint": "tslint -c tslint.json -p tsconfig.json 'src/**/*.ts?(x)'"
+  },
+  "keywords": [
+    "Garmin",
+    "GPX",
+    "Geocaching"
+  ],
+  "author": "Dulus",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clean-html": "^1.5.0",
+    "cli-progress": "^3.6.0",
+    "html-to-text": "^5.1.1",
+    "node-xml-stream": "^1.0.2",
+    "unidecode-plus": "^1.0.2",
+    "yargs": "^15.1.0"
+  },
+  "devDependencies": {
+    "@types/cli-progress": "^3.4.2",
+    "@types/he": "^1.1.0",
+    "@types/html-to-text": "^1.4.31",
+    "@types/node": "^13.7.0",
+    "@types/yargs": "^15.0.3",
+    "eslint": "^6.8.0",
+    "patch-package": "^6.2.0",
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.7.5"
+  }
+}
