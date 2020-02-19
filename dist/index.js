@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const yargs_1 = __importDefault(require("yargs"));
+const chalk_1 = __importDefault(require("chalk"));
 const Process_1 = require("./Process");
 const options = yargs_1.default
     .usage('Usage: -i <infile> [-o <outfile>]')
@@ -16,4 +17,11 @@ const options = yargs_1.default
 })
     .option('s', { alias: 'stdout', describe: 'pipe result to stdout', type: 'boolean', demandOption: false }).argv;
 const process = new Process_1.Process(options.input, options.stdout, options.output);
+process.run().then((caches) => {
+    if (!options.stdout) {
+        console.log(chalk_1.default.green(`✅ Done. ${caches} caches processed.`));
+    }
+}, () => {
+    return;
+});
 //# sourceMappingURL=index.js.map

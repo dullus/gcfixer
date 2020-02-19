@@ -1,6 +1,6 @@
 {
   "name": "gcfixer",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "author": "Dulus",
   "license": "GPL-3.0",
   "description": "Normalize Geocaching GPX file for Garmin devices",

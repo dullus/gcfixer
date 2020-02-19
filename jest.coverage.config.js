@@ -5,24 +5,20 @@ module.exports = {
   collectCoverage: true,
   coverageReporters: ['text', 'json-summary', 'html'],
   coverageDirectory: './test/coverage/',
-  roots: [
-    '<rootDir>/src'
-  ],
+  roots: ['<rootDir>/src'],
   collectCoverageFrom: [
     'src/**/*.{js,ts}',
+    '!<rootDir>/src/index.ts',
+    '!<rootDir>/src/interfaces.ts',
     '!<rootDir>/node_modules/',
     '!src/**/*.d.ts',
-    '!src/mock/**'
+    '!**/*.test.ts'
   ],
   setupFilesAfterEnv: [],
-  testMatch: [
-    '<rootDir>/src/**/*.{spec,test}.{js,ts}'
-  ],
+  testMatch: ['<rootDir>/src/**/*.{spec,test}.{js,ts}'],
   testEnvironment: 'node',
   transform: {
     '^.+\\.(js|ts)$': '<rootDir>/node_modules/babel-jest'
   },
-  transformIgnorePatterns: [
-    '[/\\\\]node_modules[/\\\\].+\\.(js|ts)$'
-  ]
+  transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(js|ts)$']
 };
