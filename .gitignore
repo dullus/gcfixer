@@ -2,12 +2,13 @@
 
 # dependencies
 /node_modules
-*.gpx
+/examples/*.gpx
 
 # testing
-/coverage
+/test/coverage
 
 # production
+/dist/*.test.js
 /dist/*.d.ts
 /dist/*.map
 

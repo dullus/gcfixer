@@ -34,30 +34,62 @@ class Process {
             removeUrl: false,
             text: false
         };
+        this.stdout = stdout;
         this.parser = new node_xml_stream_1.default();
-        this.initParser();
-        if (stdout) {
-            this.process();
-        }
-        else {
-            console.log(`${chalk_1.default.cyan('🌍 GCFixer')} ${chalk_1.default.whiteBright(version)}`);
-            console.log(`parsing: ${filename}`);
-            this.checkCaches().then((resolved) => {
-                this.bar = new cli_progress_1.default.SingleBar({}, cli_progress_1.default.Presets.shades_classic);
-                this.fw = fs_1.default.createWriteStream(this.filenameOut, { encoding: 'utf8' });
-                this.process();
-            }, (rejected) => console.log(chalk_1.default.yellow('⚠️  Sorry, no caches found.')));
-        }
+    }
+    run() {
+        return new Promise((resolved, rejected) => {
+            if (this.stdout) {
+                this.process()
+                    .then(() => resolved())
+                    .catch((txt) => {
+                    this.errorHandler(txt);
+                    rejected();
+                });
+            }
+            else {
+                console.log(`${chalk_1.default.cyan('🌍 GCFixer')} ${chalk_1.default.whiteBright(version)}`);
+                console.log(`parsing: ${this.filename}`);
+                this.checkCaches()
+                    .then(() => {
+                    this.bar = new cli_progress_1.default.SingleBar({}, cli_progress_1.default.Presets.shades_classic);
+                    this.fw = fs_1.default.createWriteStream(this.filenameOut, { encoding: 'utf8' });
+                })
+                    .then(() => this.process())
+                    .then(() => resolved(this.geocaches))
+                    .catch((txt) => {
+                    this.errorHandler(txt);
+                    rejected();
+                });
+            }
+        });
     }
     process() {
-        const stream = fs_1.default.createReadStream(this.filename);
-        stream.on('error', this.errorHandler);
-        stream.pipe(this.parser);
+        return new Promise((resolve, reject) => {
+            const stream = fs_1.default.createReadStream(this.filename);
+            // bind handlers
+            this.parser.on('instruction', this.onInstruction.bind(this));
+            this.parser.on('opentag', this.onOpenTag.bind(this));
+            this.parser.on('closetag', this.onCloseTag.bind(this));
+            this.parser.on('text', this.onText.bind(this));
+            this.parser.on('error', () => {
+                reject('XML parsing error !');
+            });
+            this.parser.on('finish', () => {
+                this.onFinish();
+                resolve();
+            });
+            stream.on('error', (err) => {
+                reject(err.message);
+            });
+            // start stream
+            stream.pipe(this.parser);
+        });
     }
     checkCaches() {
         return new Promise((resolve, reject) => {
-            const checker = new node_xml_stream_1.default();
             let tags = 0;
+            const checker = new node_xml_stream_1.default();
             checker.on('instruction', (name, attrs) => {
                 spinner_1.spinner.start();
             });
@@ -76,11 +108,13 @@ class Process {
                     resolve();
                 }
                 else {
-                    reject();
+                    reject('Sorry, no caches found.');
                 }
             });
             const stream = fs_1.default.createReadStream(this.filename);
-            stream.on('error', this.errorHandler);
+            stream.on('error', (err) => {
+                reject(err.message);
+            });
             stream.pipe(checker);
         });
     }
@@ -106,27 +140,18 @@ class Process {
         this.putText(tag);
     }
     errorHandler(err) {
-        console.error(chalk_1.default.red(`⚠️  Error: ${err.message}`));
-    }
-    initParser() {
-        this.parser.on('instruction', this.onInstruction.bind(this));
-        this.parser.on('opentag', this.onOpenTag.bind(this));
-        this.parser.on('closetag', this.onCloseTag.bind(this));
-        this.parser.on('text', this.onText.bind(this));
-        this.parser.on('error', this.onError.bind(this));
-        this.parser.on('finish', this.onFinish.bind(this));
+        console.error(chalk_1.default.red(`⚠️  Error: ${err}`));
     }
     // #region "handlers"
     onOpenTag(name, attrs) {
+        var _a;
         this.flag.desc = false;
         this.flag.text = false;
         this.flag.removeUrl = false;
         switch (name) {
             case 'groundspeak:cache':
                 this.geocaches++;
-                if (this.bar) {
-                    this.bar.increment();
-                }
+                (_a = this.bar) === null || _a === void 0 ? void 0 : _a.increment();
                 break;
             case 'groundspeak:short_description':
             case 'groundspeak:long_description':
@@ -156,20 +181,14 @@ class Process {
         this.putText(utils.processText(text, this.flag));
     }
     onInstruction(name, attrs) {
-        if (this.bar) {
-            this.bar.start(this.totalCaches, 0);
-        }
+        var _a;
+        (_a = this.bar) === null || _a === void 0 ? void 0 : _a.start(this.totalCaches, 0);
         this.putText(`<?xml version="1.0" encoding="utf-8"?>`);
     }
-    onError(err) {
-        this.errorHandler(new Error('XML parsing error !'));
-    }
     onFinish() {
-        if (this.bar && this.fw) {
-            this.bar.stop();
-            console.log(chalk_1.default.green(`✅ Done. ${this.geocaches} caches processed.`));
-            this.fw.close();
-        }
+        var _a, _b;
+        (_a = this.bar) === null || _a === void 0 ? void 0 : _a.stop();
+        (_b = this.fw) === null || _b === void 0 ? void 0 : _b.close();
     }
 }
 exports.Process = Process;
