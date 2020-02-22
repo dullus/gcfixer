@@ -3,8 +3,8 @@ import * as utils from './utils';
 
 describe('unescape', () => {
   it('gotta catch them all', () => {
-    const data = '&lt;-&amp;deg;-&amp;amp;-& -&amp; - ,,-„-“-&gt;';
-    const expected = '<-°-#@AMP@#-#@AMP@##-#@AMP@##- "-"-"->';
+    const data = '&amp;lt; * &lt;-&amp;deg;-&amp;amp;-& -&amp; - ,,-„-“-&gt; * /&amp;gt;';
+    const expected = '#@AMP@LT@# * &lt;-&deg;-&amp;-& -& - \"-\"-\"-&gt; * /#@AMP@GT@#';
     const result = utils.unescape(data);
     expect(result).toEqual(expected);
   });
@@ -12,9 +12,18 @@ describe('unescape', () => {
 
 describe('escape', () => {
   it('gotta catch them all', () => {
-    const data = '<&lt;-#@AMP@##-#@AMP@#-&amp;- ,,&gt;>';
-    const expected = '-=-=-&amp; -&amp;-&amp;-"=-=-';
+    const data = '<&lt;-#@AMP@LT@#-#@AMP@GT@#-&amp;- ,,&gt;>';
+    const expected = '<&amp;lt;-&#171;-&#187;-&amp;amp;-\"&amp;gt;>';
     const result = utils.escape(data);
+    expect(result).toEqual(expected);
+  });
+});
+
+describe('escape with tags', () => {
+  it('gotta catch them all', () => {
+    const data = '<&lt;-#@AMP@LT@#-#@AMP@GT@#-&amp;- ,,&gt;>';
+    const expected = '&lt;&amp;lt;-&#171;-&#187;-&amp;amp;-\"&amp;gt;&gt;';
+    const result = utils.escape(data, true);
     expect(result).toEqual(expected);
   });
 });
@@ -37,7 +46,7 @@ describe('removeUrl', () => {
 
 describe('processText', () => {
   it('desc', () => {
-    const flag = { desc: true, text: false, removeUrl: false };
+    const flag = { desc: true, text: false, removeUrl: false, stripHtml: true };
     const data = '&lt;p&gt; ľščťžýáí 40°  &lt;/p&gt; &lt;img src="foo.jpg" /&gt;';
     const expected = 'lsctzyai 40°';
     const result = utils.processText(data, flag);
@@ -45,15 +54,15 @@ describe('processText', () => {
   });
 
   it('text', () => {
-    const flag = { desc: false, text: true, removeUrl: false };
+    const flag = { desc: false, text: true, removeUrl: false, stripHtml: true };
     const data = '&lt; ľščťžýáí 40° &gt;';
-    const expected = '-= lsctzyai 40° =-';
+    const expected = '&#171; lsctzyai 40° &#187;';
     const result = utils.processText(data, flag);
     expect(result).toEqual(expected);
   });
 
   it('desc and url', () => {
-    const flag = { desc: true, text: false, removeUrl: true };
+    const flag = { desc: true, text: false, removeUrl: true, stripHtml: true };
     const data = '&lt;p&gt;ľščťžýáí 40&deg;&lt;/p&gt; &lt;a href=&quot;http://foo.com&quot;&gt;link&lt;/a&gt;';
     const expected = 'lsctzyai 40°\n\nlink';
     const result = utils.processText(data, flag);

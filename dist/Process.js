@@ -21,7 +21,7 @@ const spinner_1 = require("./spinner");
 const version = require('../package.json').version;
 // #endregion
 class Process {
-    constructor(filename, stdout = false, filenameOut) {
+    constructor(filename, params, filenameOut) {
         this.filename = filename;
         this.filenameOut =
             filenameOut || (filename.includes('.gpx') ? filename.replace('.gpx', '.out.gpx') : `${filename}.out.gpx`);
@@ -32,9 +32,10 @@ class Process {
         this.flag = {
             desc: false,
             removeUrl: false,
+            stripHtml: params.stripHtml,
             text: false
         };
-        this.stdout = stdout;
+        this.stdout = params.stdout;
         this.parser = new node_xml_stream_1.default();
     }
     run() {

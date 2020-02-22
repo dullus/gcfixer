@@ -24,7 +24,7 @@ export class Process {
   private stdout: boolean;
   private totalCaches: number;
 
-  constructor(filename: string, stdout = false, filenameOut?: string) {
+  constructor(filename: string, params: I.Params, filenameOut?: string) {
     this.filename = filename;
     this.filenameOut =
       filenameOut || (filename.includes('.gpx') ? filename.replace('.gpx', '.out.gpx') : `${filename}.out.gpx`);
@@ -35,9 +35,10 @@ export class Process {
     this.flag = {
       desc: false,
       removeUrl: false,
+      stripHtml: params.stripHtml,
       text: false
     };
-    this.stdout = stdout;
+    this.stdout = params.stdout;
     this.parser = new Parser() as I.ParserStream;
   }
 

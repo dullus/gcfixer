@@ -3,9 +3,11 @@ import fs from 'fs';
 import { Process } from './Process';
 import { spinner } from './spinner';
 // @ts-ignore
-import { out as cacheOut } from '../test/mock/cache.out';
+import { out as cachePlain } from '../test/mock/cache.plain';
+import { out as cacheHtml } from '../test/mock/cache.html';
 // @ts-ignore
-import { out as pqOut } from '../test/mock/pq.out';
+import { out as pqPlain } from '../test/mock/pq.plain';
+import { out as pqHtml } from '../test/mock/pq.html';
 
 function normCRLF(data: string): string {
   return data.replace(/\r\n/g, '\n');
@@ -52,7 +54,7 @@ describe('Process', () => {
   });
 
   it('unknown file', (done) => {
-    const proc = new Process('nonexistent.xml', true);
+    const proc = new Process('nonexistent.xml', { stdout: true, stripHtml: true });
     const expected = [`\u001b[31m⚠️  Error: ENOENT: no such file or directory, open 'nonexistent.xml'\u001b[39m`];
     proc.run().then(
       () => {
@@ -66,7 +68,7 @@ describe('Process', () => {
   });
 
   it('bad file', (done) => {
-    const proc = new Process('test/mock/bad.gpx', false);
+    const proc = new Process('test/mock/bad.gpx', { stdout: false, stripHtml: true });
     const expected = ['\u001b[31m⚠️  Error: Sorry, no caches found.\u001b[39m'];
     proc.run().then(
       () => {
@@ -80,7 +82,7 @@ describe('Process', () => {
   });
 
   it('no caches file', (done) => {
-    const proc = new Process('test/mock/nocache.gpx', false);
+    const proc = new Process('test/mock/nocache.gpx', { stdout: false, stripHtml: true });
     const expected = ['\u001b[31m⚠️  Error: Sorry, no caches found.\u001b[39m'];
     proc.run().then(
       () => {
@@ -93,12 +95,12 @@ describe('Process', () => {
     );
   });
 
-  it('single cache file, stdout', (done) => {
-    const proc = new Process('test/mock/cache.gpx', true);
+  it('single cache file, stdout no html', (done) => {
+    const proc = new Process('test/mock/cache.gpx', { stdout: true, stripHtml: true });
     proc.run().then(
       () => {
         const data = normCRLF(spyBuffer.join(''));
-        expect(data).toEqual(cacheOut);
+        expect(data).toEqual(cachePlain);
         done();
       },
       () => {
@@ -107,12 +109,12 @@ describe('Process', () => {
     );
   });
 
-  it('multiple caches file, stdout', (done) => {
-    const proc = new Process('test/mock/pq.gpx', true);
+  it('single cache file, stdout with html', (done) => {
+    const proc = new Process('test/mock/cache.gpx', { stdout: true, stripHtml: false });
     proc.run().then(
       () => {
         const data = normCRLF(spyBuffer.join(''));
-        expect(data).toEqual(pqOut);
+        expect(data).toEqual(cacheHtml);
         done();
       },
       () => {
@@ -121,12 +123,55 @@ describe('Process', () => {
     );
   });
 
-  it('multiple caches file', (done) => {
-    const proc = new Process('test/mock/pq.gpx');
+
+  it('multiple caches - stdout - plain', (done) => {
+    const proc = new Process('test/mock/pq.gpx', { stdout: true, stripHtml: true });
     proc.run().then(
       () => {
         const data = normCRLF(spyBuffer.join(''));
-        expect(data).toEqual(pqOut);
+        expect(data).toEqual(pqPlain);
+        done();
+      },
+      () => {
+        throw new Error('Promise should not be rejected');
+      }
+    );
+  });
+
+  it('multiple caches - file - plain', (done) => {
+    const proc = new Process('test/mock/pq.gpx', { stdout: false, stripHtml: true });
+    proc.run().then(
+      () => {
+        const data = normCRLF(spyBuffer.join(''));
+        expect(data).toEqual(pqPlain);
+        done();
+      },
+      () => {
+        throw new Error('Promise should not be rejected');
+      }
+    );
+  });
+
+  it('multiple caches - stdout - html', (done) => {
+    const proc = new Process('test/mock/pq.gpx', { stdout: true, stripHtml: false });
+    proc.run().then(
+      () => {
+        const data = normCRLF(spyBuffer.join(''));
+        expect(data).toEqual(pqHtml);
+        done();
+      },
+      () => {
+        throw new Error('Promise should not be rejected');
+      }
+    );
+  });
+
+  it('multiple caches - file - html', (done) => {
+    const proc = new Process('test/mock/pq.gpx', { stdout: false, stripHtml: false });
+    proc.run().then(
+      () => {
+        const data = normCRLF(spyBuffer.join(''));
+        expect(data).toEqual(pqHtml);
         done();
       },
       () => {

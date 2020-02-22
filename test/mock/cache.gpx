@@ -2,7 +2,7 @@
 <gpx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" creator="Groundspeak, Inc. All Rights Reserved. http://www.groundspeak.com" xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd http://www.groundspeak.com/cache/1/0/1 http://www.groundspeak.com/cache/1/0/1/cache.xsd" xmlns="http://www.topografix.com/GPX/1/0">
   <name>Cache Listing Generated from Geocaching.com</name>
   <desc>This is an individual cache generated from Geocaching.com</desc>
-  <author>Account "SimonCooper.sk" From Geocaching.com</author>
+  <author>Account "Somebody" From Geocaching.com</author>
   <email>contact@geocaching.com</email>
   <url>https://www.geocaching.com</url>
   <urlname>Geocaching - High Tech Treasure Hunting</urlname>
@@ -11,16 +11,16 @@
   <bounds minlat="48.728433" minlon="21.241983" maxlat="48.728617" maxlon="21.242033" />
   <wpt lat="48.728433" lon="21.241983">
     <time>2018-02-21T00:00:00</time>
-    <name>GC7JKKZ</name>
-    <desc>100 + 100 Challenge  by Simon Cooper, Unknown Cache (5/5)</desc>
-    <url>https://www.geocaching.com/seek/cache_details.aspx?guid=09c590a2-d212-46df-b48e-d8161b0628f5</url>
+    <name>GC12345</name>
+    <desc>100 + 100 Challenge  by Somebody, Unknown Cache (5/5)</desc>
+    <url>https://www.geocaching.com/seek/cache_details.aspx?guid=09c590a2-c212-1234-xyzq-d8161b0628f5</url>
     <urlname>100 + 100 Challenge </urlname>
     <sym>Geocache</sym>
     <type>Geocache|Unknown Cache</type>
     <groundspeak:cache id="6608643" available="True" archived="False" xmlns:groundspeak="http://www.groundspeak.com/cache/1/0/1">
       <groundspeak:name>100 + 100 Challenge </groundspeak:name>
-      <groundspeak:placed_by>Simon Cooper</groundspeak:placed_by>
-      <groundspeak:owner id="6535690">SimonCooper.sk</groundspeak:owner>
+      <groundspeak:placed_by>Somebody</groundspeak:placed_by>
+      <groundspeak:owner id="6535690">Somebody</groundspeak:owner>
       <groundspeak:type>Unknown Cache</groundspeak:type>
       <groundspeak:container>Small</groundspeak:container>
       <groundspeak:attributes>
@@ -39,118 +39,60 @@
       <groundspeak:state>Košický kraj</groundspeak:state>
       <groundspeak:short_description html="True">
 </groundspeak:short_description>
-      <groundspeak:long_description html="True">&lt;p style="background:#85c65d;padding:12px;border-radius:4px;font-size:16px;color:#FFFFFF;text-align:left;"&gt;&lt;b&gt;Prečo táto výzva?&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;
-Prvá challenge, ktorú som vôbec zaregistroval, že existuje bola košická&lt;br /&gt;
-&lt;a href="http://coord.info/GC3BZMF/"&gt;365 + 1 Day Callendar Challenge Cache&lt;/a&gt; (GC3BZMF) od mkr..&lt;br /&gt;
-Trvalo mi 3,5 roka kým som ju dokázal splniť. Myslím, že snažiť sa splniť podmienky na keške 40 mesiacov je výzva, ktorá je neporovnateľná s touto challenge krabkou. Na túto ti stačí výlet s prateľmi, možno tých výletov bude 5-6, v pohode. Ale iste nebude potrebné čakať cez 40 mesiacov.&lt;br /&gt;
-&lt;img border="2" src="http://outdoorgames.sk/gc/ignore.gif" alt="navrh" width="287" height="250" align="left" /&gt; Môžeš sa samozrejme posťažovať čo všetko sa nedá, ako je všetko ďaleko a komplikované, môžeš prstom ukázať na iných, že oni to majú jednoduchšie, lebo bývajú, kde bývajú a podobne, ale stále sa dostávame k rozhodnutiu challenge buď splniť alebo nie.&lt;br /&gt;
-Dokonca existuje aj možnosť kešku si na mape schovať - klikni na "Ignore", ale zároveň vložiť medzi sledované - "Watch". Opäť možnosti výberu.&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;p style="background:#4d82a0;padding:12px;border-radius:4px;font-size:16px;color:#FFFFFF;text-align:center;"&gt;&lt;b&gt;Prečo Košice?&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;
-Nazvem to "kešerská turistika" pri návšteve mesta Košice. Mesto v ktorom som strávil pár rokov svojho života a určite stojí za návštevu. Je tu množstvo pekných kešiek, taktiež ľudia, ktorí sú rovnako súťaživí ako aj na druhom konci Slovenska či niekde za našimi hranicami a na záver to môže a samozrejme aj nemusí poslúžiť ako výzva pre domácich vycestovať za keškami na miesta, kde ešte neboli.&lt;br /&gt;
-&lt;br /&gt;
-Dosť bolo slov, poďme na podmienky logovania.&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;div style="background:url(http://outdoorgames.sk/gc/t5670.JPG);width:100%;padding:16px 0px;border-radius:4px;margin:12px 0px 6px 0px;"&gt;
-&lt;div style="padding:16px 24px;background:rgba(255, 255, 255, 0.6);"&gt;
-&lt;p&gt;&lt;font size="3" color="black"&gt;Pozývam ťa na novú výzvu k tvojim kešerským zážitkom, ktorú môžeš zavŕšiť odlovom tejto Challenge kešky. &lt;b&gt;Krabica je ukrytá na zverejnených súradniciach&lt;/b&gt; čo znamená, že ju stačí navštíviť, zalogovať sa do logbooku avšak pre úspešný "Found It" log &lt;b&gt;musíš splniť túto výzvu:&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font size="3" color="black"&gt;&lt;br /&gt;
-&lt;b&gt;1) zalogovať úspešný nález minimálne na 100 keškách s obtiažnosťou 5 (D5).&lt;br /&gt;
-2) zalogovať úspešný nález minimálne na 100 keškách s terénom 5 (T5).&lt;/b&gt;&lt;/font&gt;&lt;br /&gt;
-V prípade, že podmienku ešte nespĺňaš, môžeš sa zalogovať poznámkou (Write note) a neskôr, keď splníš túto výzvu zmeníš ju cez editáciu logu na nález (Found It).&lt;/p&gt;
-&lt;p&gt;&lt;font size="3" color="black"&gt;Pre kontrolu splnenia podmienky si otvor overovač nižšie alebo rovno navštív svoje štatistiky na stránke Geocaching.com.&lt;/font&gt;&lt;/p&gt;
-&lt;p style="text-align:center;"&gt;&lt;a href="https://project-gc.com/Challenges/GC7JKKZ/33079"&gt;&lt;img src="https://cdn2.project-gc.com/Images/Checker/33079" title="Project-GC Challenge checker" alt="PGC Checker" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font size="3" color="blue"&gt;The cache is hidden on the published coordinates what means it is sufficient to visit it. But to log it, you have to meet the following challenge criteria:&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;&lt;font size="3" color="blue"&gt;&lt;b&gt;1) Your task is to visit and log at least 100x D5 caches.&lt;br /&gt;
-2) Your task is to visit and log at least 100x T5 caches.&lt;/b&gt;&lt;br /&gt;
-In case, you don't meet this challenge criteria, you can put "write note" log and later, after you once meet the challenge criteria in the future, you will change your write note log on official "found it" log. You can verify if you fulfil this challenge here:&lt;/font&gt;&lt;/p&gt;
-&lt;p style="text-align:center;"&gt;&lt;a href="https://project-gc.com/Challenges/GC7JKKZ/33079"&gt;&lt;img src="https://cdn2.project-gc.com/Images/Checker/33079" title="Project-GC Challenge checker" alt="PGC Checker" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;br /&gt;
-&lt;p style="background:#308203;padding:12px;border-radius:4px;font-size:16px;color:#FFFFFF;text-align:center;"&gt;&lt;b&gt;Kešky s obtiažnosťou 5 nájdeš aj v mojom bookmarku, ktorý je priebežne aktualizovaný a to isté sa týka aj T5 kešiek.&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;br /&gt;
-&lt;img src="http://outdoorgames.sk/gc/55-no.gif" /&gt;&lt;br /&gt;
-&lt;img src="http://outdoorgames.sk/gc/55-yes.GIF" /&gt;&lt;br /&gt;
-&lt;p style="background:#542c41;padding:12px;border-radius:4px;font-size:16px;color:#FFFFFF;text-align:center;"&gt;&lt;b&gt;Splnil si podmienky a zalogoval fyzicky túto challenge kešku?&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;
-Okrem pocitu, ktorý ti táto keška priniesla a bolo toho určite veľmi veľa, keďže sa jedná minimálne o dvestovku tvojich zážitkov ťa u mňa čaká tématické SWG k tejto keške. To ti dám osobne, resp. zašlem poštou každému po logu Found It. Keďže nie každý drievka zbiera, tak je potrebné o SWG požiadať - stačí ma kontaktovať a je tvoje po splnení challenge 100+100.&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;p style="background:#dff232;padding:12px;border-radius:4px;font-size:16px;color:#000000;text-align:left;"&gt;&lt;b&gt;Čo by ťa mohlo zaujať medzi D5 slovenskými keškami:&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;
-Poradie je náhodné, rovnako ako aj výber tých čo ma osobne zaujali.&lt;br /&gt;
-1) Pri návšteve oravskej Trstenej neobíď mini sériu kešiek ukončenú "krabkou" &lt;a href="http://coord.info/GC5TZR1/"&gt;"Other cache"&lt;/a&gt; od ulovo team, ktorá sa dlhodobo drží na číslach 98-100% FP na Slovensku&lt;br /&gt;
-2) Bratislava ako prvá na Slovensku ponúkla kešku plnú socializácie pod názvom &lt;a href="http://coord.info/GC78Q3Y/"&gt;"[MOB Cache] Bratislava Social"&lt;/a&gt; od _miko_&lt;br /&gt;
-3) V Košiciach nájdeme od známeho, domáceho ownera Guruho napríklad aj kešku pod názvom &lt;a href="http://coord.info/GC5G3NW/"&gt;"Guru Joe Kosice QUEST #10"&lt;/a&gt;, ktorá skutočne stojí za návštevu&lt;br /&gt;
-4) Slovensko-Rakúske pohraničie ponúka kešku &lt;a href="http://coord.info/GC37Q7Q/"&gt;"Bláznivý hodinár"&lt;/a&gt; od Marta&amp;amp;Filip&lt;br /&gt;
-5) Pri návšteve okresu Humenné pozdvihni zrak ku keške &lt;a href="http://coord.info/GC63CHZ/"&gt;"Hotel na buku"&lt;/a&gt; od bolda&lt;br /&gt;
-6) Cestovanie Slovenskom si spríjemnite aj v okrese Martin a zastavte pri keške &lt;a href="http://coord.info/GC5CY69/"&gt;"Hospodarsky kopec"&lt;/a&gt;, ktorej owneruje známy zberateľ drievok toudy&lt;br /&gt;
-7) Na hornej Nitre si dovolím doporučiť odlov kešky &lt;a href="http://coord.info/GC6ZTKH/"&gt;"Strojárska"&lt;/a&gt; od PD-Scout&lt;br /&gt;
-8) V Bratislave by bola obrovská škoda obísť &lt;a href="http://coord.info/GC5MC6N/"&gt;"Siesty zmysel"&lt;/a&gt; od musashimaru&lt;br /&gt;
-9) V Bratislave si tiež vychutnaj úlohu na zaujímavej keške &lt;a href="http://coord.info/GC51DWH/"&gt;"Zdrhol mi bus"&lt;/a&gt; od toitoi&lt;br /&gt;
-10) Neďaleko Liptovského Mikuláša sa nachádza zákerná kryptovacia séria krabičiek začínajúca s &lt;a href="http://coord.info/GC5WMQA/"&gt;"MiniCrypto#1"&lt;/a&gt; od Valarko&lt;br /&gt;&lt;/p&gt;
-&lt;br /&gt;
-&lt;p style="background:#dff232;padding:12px;border-radius:4px;font-size:16px;color:#000000;text-align:left;"&gt;&lt;b&gt;Čo by ťa mohlo zaujať medzi T5 slovenskými keškami:&lt;br /&gt;&lt;/b&gt;&lt;br /&gt;
-Poradie je náhodné, rovnako ako aj výber tých čo ma osobne zaujali.&lt;br /&gt;
-1) V obci Nová Ľubovňa sme si to v daždi užili na krabici &lt;a href="http://coord.info/GC6M2ZW/"&gt;"Datel velky"&lt;/a&gt; od známeho tépäťkára busty03&lt;br /&gt;
-2) V okrese Partizánske sa určite zabavíte na &lt;a href="http://coord.info/GC6G10F/"&gt;"Diagnoza T5 - Kompa"&lt;/a&gt; od TominoTO&lt;br /&gt;
-3) Pár krokov od Košíc stojí za návštevu vo svojom úkryte krabica &lt;a href="http://coord.info/GC5RVM8/"&gt;"Kosicke povesti a legendy: Spaleny hostinec"&lt;/a&gt; od LesMarco&lt;br /&gt;
-4) V Košiciach ostaneme a zavítame ku krabici &lt;a href="http://coord.info/GC63R77/"&gt;"P.O.Bajuzovic #8"&lt;/a&gt; od Bajuz123&lt;br /&gt;
-5) Kto pozná frownovky v Bratislave a okolí, tak ho iste neprekvapí pozvánka napríklad na jeho krabicu &lt;a href="http://coord.info/GC561PJ/"&gt;"Horizont udalosti"&lt;/a&gt; od fr:own&lt;br /&gt;
-Ak sa skutočne rozhodneš zavítať sem, tak určite zájdi tiež na jeho "obyčajnú" T4 pod názvom Cierna diera / Black Hole (GC561RF), kde sme si to pekne užili pri odlove.&lt;br /&gt;
-6) Náš pefi ako owner a pán bolda ako veľmajster nás za Michalovcami pozývajú na krabku &lt;a href="http://coord.info/GC637XH/"&gt;"Hotel Geco :)"&lt;/a&gt; od NPETER.F&lt;br /&gt;
-7) Neďaleko Lozorna nájdete parádnu sériu Roninoviek, ktorá je ukončená krásnou bonusovkou s názvom &lt;a href="http://coord.info/GC5T2QY/"&gt;"47 Ronin - Bonus (Asano Naganori)"&lt;/a&gt; od drobec&lt;br /&gt;
-8) V okrese Galanta nájdete veľmi zaujímavú sériu pod názvom Des a Hrôza. Zaujímavé DéTéčka, ale aj hodnotenie FP vravia za veľa, ale spomeniem napríklad letterbox &lt;a href="http://coord.info/GC7967H/"&gt;"Des a Hrôza"&lt;/a&gt; od geJulie&lt;br /&gt;
-9) Pri prechode Donovalmi sa skúste zapozerať na krabky s názvom ... poklad. Všetky zaujali, ale pozývam vás napríklad na &lt;a href="http://coord.info/GC5RPEX/"&gt;"Nacisticky poklad"&lt;/a&gt; od Scoly&lt;br /&gt;
-10) Veľmi pekne spracovaný T5 letterbox s príjemným občerstvovacím finálom nájdeš za Bratislavou pod názvom &lt;a href="http://coord.info/GC7GRYC/"&gt;": spomienková..."&lt;/a&gt; od :ITAL&lt;br /&gt;
-11) Na záver spomeniem aspoň jednu z nádhernej série, a to &lt;a href="http://coord.info/GC5Y3PP/"&gt;"Sifrovana VIII (Rubikophobia)"&lt;/a&gt; od misoba + busty03&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-&lt;font color="red"&gt;Aby sa nezabudlo:&lt;br /&gt;
-Nárok na FTF má samozrejme výlučne kešer, ktorý 100+100 challenge spĺňa a je zalogovaný ako prvonálezca.&lt;/font&gt;&lt;br /&gt;
-&lt;p&gt;Additional Hidden Waypoints&lt;/p&gt;017JKKZ - Virtual stage&lt;br /&gt;N 48° 43.717 E 021° 14.522&lt;br /&gt;Bezplatný parking do 1 hodiny parkovania&lt;br /&gt;FN7JKKZ - Final Location&lt;br /&gt;N 48° 43.706 E 021° 14.519&lt;br /&gt;&lt;br /&gt;</groundspeak:long_description>
+      <groundspeak:long_description html="True">&lt;!-- hidden stuff --&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;p style=&quot;color:red;&quot;&gt;
+  &lt;font size=&quot;3&quot; color=&quot;red&quot;&gt;Obsolete font stuff&lt;/font&gt;
+  &lt;b&gt;&lt;i class=&quot;remove-me&quot;&gt;swapped tags&lt;/b&gt;&lt;/i&gt;
+  &lt;img src=&quot;foo.gif&quot; alt=&quot;remove me&quot; /&gt;
+  &lt;p&gt;&lt;/p&gt;
+  &lt;font color="#009900"&gt;Pred nieko&amp;#318;kými storo&amp;#269;iami
+pokrývali lesy vä&amp;#269;&amp;scaron;inu ná&amp;scaron;ho územia.&lt;/font&gt;
+&lt;/p&gt;
+&lt;h2&gt; -&amp;gt; entities &amp;lt;- &lt;/h2&gt;
+&lt;div&gt;unfinished division</groundspeak:long_description>
       <groundspeak:encoded_hints>rebrikova rychlovka</groundspeak:encoded_hints>
       <groundspeak:logs>
         <groundspeak:log id="896063249">
           <groundspeak:date>2019-11-22T20:00:00Z</groundspeak:date>
           <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="22330100">MsAlch</groundspeak:finder>
-          <groundspeak:text encoded="False">Ahoj. [Navstiveno a zalogovano](https://coord.info/GL104Z7YY) spolecne s alchymistou pri nasi nedavne navsteve vychodniho Slovenska. Overovac souhlasi takze loguji 'Found It' [:D]
-
-[MsAlch](https://www.geocaching.com/profile/?u=MsAlch) has used [Project-GC](https://project-gc.com/Challenges//33079 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
-
-OK:
-User has **209** finds (100 needed).Filters:( difficulties (5)
-User has **176** finds (100 needed).Filters:( terrains (5) 
-
-Dekuji za kesku s vyzvou a tesime se na dalsi. Pozdrav z Brna.</groundspeak:text>
+          <groundspeak:finder id="22330100">Cacher01</groundspeak:finder>
+          <groundspeak:text encoded="False">Ahoj. [Navstiveno a zalogovano](https://coord.info/GL0123456) spolecne s Cacher02 pri nasi nedavne navsteve vychodniho Slovenska. Overovac souhlasi takze loguji 'Found It' [:D]</groundspeak:text>
         </groundspeak:log>
         <groundspeak:log id="895232528">
           <groundspeak:date>2019-11-22T20:00:00Z</groundspeak:date>
           <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="2306576">alchymist</groundspeak:finder>
-          <groundspeak:text encoded="False">Ahoj. [Nalezeno](https://coord.info/GL104BRBH) spolecne s MsAlch pri nedavne navsteve vychodnich casti Slovenska. Vyzvu splnuji loguji tedy **Found It**
+          <groundspeak:finder id="2306576">Cacher02</groundspeak:finder>
+          <groundspeak:text encoded="False">&gt;🇸🇰 🌐❤🌞 6365 🌞 10:10 🌞❤🌐 🇸🇰 
 
-[alchymist](https://www.geocaching.com/profile/?u=alchymist) has used [Project-GC](https://project-gc.com/Challenges//33079 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
+---
+**😀Tak tuto sme dali, ako sucast zabavy kesera. Found as a cast of fun while playing around.😀**
+🤔🇸🇰.Dnes, cestou necestou po okoli...  ucelovo zvladnut tuto pod pravym menom KOTUHU... v perfektnej partii ci aj nasho mladeho lodnika, bez ktoreho by to isto nebolo zase mozne - LEGOTECH... pauza v odlovoch tri roky, asi naj a naj pauza co sme kedy lovili... paradne zabery DJI techniky suce aj na GIF, link na youtube som planoval do logu priamo, aj preto log skoro po mesiaci... casom doplnime... sme spojili dokopy a mozno raz i motyka vystreli... za nas team prifukne aj FBodik, sak kto uz ma na sobotu taky biznis jak je GC... ocenenie GCvote je pravidlo... dakujeme ownerovi za ukazanie miesta a moznost tu byt.😉😉😉
+😏🙃LOVU ZDAR🙃😏
 
-OK:
-User has **402** finds **(100 needed)**.Filters:( difficulties (5) )
-User has **443** finds **(100 needed)**.Filters:( terrains (5) )
+---
+*🤗IN: --, OUT: --, visited: TB123456🤗*
 
+*🤩 GCVote hodnota 4.5
 
-Diky za kesku s vyzvou a hlavne dalsi vyzivny bodik do me sbirky. Pozdrav z Brna
+---
 
-</groundspeak:text>
+***😋Greetings from 🇸🇰 Slovakia 🇸🇰 by Cacher02! Thanks! Dakujeme!😋***
+
+---
+*😯Logged from SAMSUNG S7edge Gold mobile - DriveIn - LocusPRO.😯😜</groundspeak:text>
         </groundspeak:log>
         <groundspeak:log id="893104532">
           <groundspeak:date>2019-11-08T20:00:00Z</groundspeak:date>
           <groundspeak:type>Owner Maintenance</groundspeak:type>
-          <groundspeak:finder id="6535690">SimonCooper.sk</groundspeak:finder>
+          <groundspeak:finder id="6535690">Somebody</groundspeak:finder>
           <groundspeak:text encoded="False">Krabka dolamana, obsah vykradnuty..
 Nova škatuľa, nový LB, drevo na výmenu.. </groundspeak:text>
         </groundspeak:log>
         <groundspeak:log id="892734577">
           <groundspeak:date>2019-11-05T05:26:58Z</groundspeak:date>
           <groundspeak:type>Needs Maintenance</groundspeak:type>
-          <groundspeak:finder id="2562596">Mikme</groundspeak:finder>
+          <groundspeak:finder id="2562596">Cacher03</groundspeak:finder>
           <groundspeak:text encoded="False">This geocacher reported that the container is damaged.
 
 Viac info ownerovi poslané správou</groundspeak:text>
@@ -158,7 +100,7 @@ Viac info ownerovi poslané správou</groundspeak:text>
         <groundspeak:log id="893573861">
           <groundspeak:date>2019-11-02T19:00:00Z</groundspeak:date>
           <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="2590727">Vigi</groundspeak:finder>
+          <groundspeak:finder id="2590727">Cacher04</groundspeak:finder>
           <groundspeak:text encoded="False">Som rada, že spĺňam podmienky :) 
 
 [Vigi](https://www.geocaching.com/profile/?u=Vigi) použil [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") pro ověření, zda splnil podmínky této challenge keše s výsledkem: splněno.
@@ -176,10 +118,10 @@ User has 328 finds (100 needed).Filters:( terrains (5) )
         <groundspeak:log id="892734572">
           <groundspeak:date>2019-11-02T19:00:00Z</groundspeak:date>
           <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="2562596">Mikme</groundspeak:finder>
+          <groundspeak:finder id="2562596">Cacher05</groundspeak:finder>
           <groundspeak:text encoded="False">Tak túto sa mi po tom kešovacom desaťročí darí splniť so zmrzlinou v ruke oproti iným challenge s ktorými stále bojujem.
 
-[Mikme](https://www.geocaching.com/profile/?u=Mikme) has used [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
+[Cacher05](https://www.geocaching.com/profile/?u=Cacher05) has used [Project-GC](https://project-gc.com/Challenges/GC01234567 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
 
 User has 246 finds (100 needed).Filters:( difficulties (5) )
 User has 436 finds (100 needed).Filters:( terrains (5) )
@@ -190,146 +132,22 @@ User has 436 finds (100 needed).Filters:( terrains (5) )
         <groundspeak:log id="891688030">
           <groundspeak:date>2019-10-27T10:25:00Z</groundspeak:date>
           <groundspeak:type>Write note</groundspeak:type>
-          <groundspeak:finder id="22330100">MsAlch</groundspeak:finder>
-          <groundspeak:text encoded="False">Ahoj. Navstiveno a odloveno s alchymistou ..[:D]. Prodlouzeny vikend  nas pobidl k ceste k nasim sousedum na Slovensko, Ukrajinu a do Tater. Nejspis mam splneno.Uvidim co rekne checker. Diky za chaleng, ukazku mista, kes a bodik do me sbirky..</groundspeak:text>
+          <groundspeak:finder id="22330100">Cacher06</groundspeak:finder>
+          <groundspeak:text encoded="False">Ahoj. Navstiveno a odloveno s Cacher03 ..[:D]. Prodlouzeny vikend  nas pobidl k ceste k nasim sousedum na Slovensko, Ukrajinu a do Tater. Nejspis mam splneno.Uvidim co rekne checker. Diky za chaleng, ukazku mista, kes a bodik do me sbirky..</groundspeak:text>
         </groundspeak:log>
         <groundspeak:log id="891140167">
           <groundspeak:date>2019-10-28T01:41:10Z</groundspeak:date>
           <groundspeak:type>Needs Maintenance</groundspeak:type>
-          <groundspeak:finder id="2306576">alchymist</groundspeak:finder>
+          <groundspeak:finder id="2306576">Cacher07</groundspeak:finder>
           <groundspeak:text encoded="False">Krabice uz ma jedinou funkcni 'pacicku' pred navratem jsme ji 'opravili' lepici paskou. Kontrola nutna!</groundspeak:text>
         </groundspeak:log>
         <groundspeak:log id="891137768">
           <groundspeak:date>2019-10-27T21:23:00Z</groundspeak:date>
           <groundspeak:type>Write note</groundspeak:type>
-          <groundspeak:finder id="2306576">alchymist</groundspeak:finder>
-          <groundspeak:text encoded="False">Ahoj. Navstiveno a nalezeno spolecne s MsAlch pri dnesni vyprave za keskami... [:D]. O tomto prodlouzenem vikendu jsme vyrazili na vychod Slovenska, Ukrajinu a do Tater. Pohodovy odlov, uvidime co rekne overovac.
+          <groundspeak:finder id="2306576">Cacher08</groundspeak:finder>
+          <groundspeak:text encoded="False">Ahoj. Navstiveno a nalezeno spolecne s Cacher02 pri dnesni vyprave za keskami... [:D]. O tomto prodlouzenem vikendu jsme vyrazili na vychod Slovenska, Ukrajinu a do Tater. Pohodovy odlov, uvidime co rekne overovac.
 
 PS: krabicku jsme vyspravili lepici paskou. Kontrola nutna</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="883764024">
-          <groundspeak:date>2019-09-21T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="5681273">filip(co)</groundspeak:finder>
-          <groundspeak:text encoded="False">Ked sme sa 25.3.2018 spolu s Coare,Binkaci a Duskom zapisovali do tejto krabicky hovoril som si,ze zmena WN logu na FI bude veru dlhaaaaa,predlhaaaa cesta.Teraz pozeram,ze uz podmienky splname a netrvalo to ani tak hrozne dlho ako som povodne ocakaval ;) Dakujeme za tuto super vyzvu a davame FP.</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="882704588">
-          <groundspeak:date>2019-09-16T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Write note</groundspeak:type>
-          <groundspeak:finder id="2917070">Eva80</groundspeak:finder>
-          <groundspeak:text encoded="False">Zpětně přidávám slíbený a zasloužený FP.</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="880898738">
-          <groundspeak:date>2019-09-08T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="2917070">Eva80</groundspeak:finder>
-          <groundspeak:text encoded="False"># 17626 keš - tak tuhle výzvu mám v hledáčku snad od jejího začátku, už tehdy jsem  z okna mého brněnského bytu toužebně pomrkávala a vyhlížela směrem ke Košicím [:D].
-14.10. 2018 se mi tento můj geosen částečně i splnil, kdy jsme se do Košic skutečně i vydali na třídenní trip po východě, tehdy v "mezinárodním" složení auta, já jediná Češka a pak moji slovenští kamarádi jarchiv, anaconda.marian a jurííí. S klukama jsem si vylezla a zalogovala, pak už jen zbývalo to splnit. D5 nejsou zas az takový problém, zato tech T5 mi ještě pár chybělo. Ale i to se změnilo tento pátek s mými T5 parťáky posmerou a stumbou zdoláním mé sté T5 kešky u nás v Brně. A tak konečně i já tuto kešku rozesmeji na mapě!
-Moc mě potěšila, díky za tuto výzvu můj milý. A jasně, že ti patří za ni i pusa na dálku a k ní jeden + FP [;)]
-[Eva80](https://www.geocaching.com/profile/?u=Eva80) has used [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
-
-OK: AND{
-User has 140 finds (100 needed).Filters:( difficulties (5) )
-User has 100 finds (100 needed).Filters:( terrains (5) )
-}</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="872058351">
-          <groundspeak:date>2019-08-01T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="5871919">TominoTO</groundspeak:finder>
-          <groundspeak:text encoded="False">#5450
-
-Od 27. júla do 4. augusta sme si s mojou drahou polovičkou naplánovali trip po Slovensku s cieľom vyfarbiť zvyšných 13 okresov, pridať posledných 6 hradných puzzlíkov, k tomu nejaké kalvárie, drevené kostolíky, rozhľadne, či ďalšie krásne miesta v kraji, kde nič nie je. Spolu sme najazdili niečo málo cez 1800 km, našli cez 120 kešiek. Počasie nám vyšlo napriek všeljakým predpovedia nadmieru a celý výlet sme si veľmi užili. Všetkým ownerom patrí veľká vďaka za ukázanie krásnych miest.
-
----
-V prvý augustový deň som naplánoval presun z Uliča so zastávkou na 8 drevených kostolíkoch, Vinianskom hrade, odbočkou na Trebišov až do Košíc. 
-
-Takáto jednoduchá challenge, lepšie nemáš? :) Spĺňam rovno dvojnásobne. Aj kvôli tejto sa s nami viezol cez celú republiku rebrík. Som rád, že som tu bol už za tmy a bola to rýchla akcia. 
-
-[TominoTO](https://www.geocaching.com/profile/?u=TominoTO) has used [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
-
-OK: AND{
-User has 206 finds (100 needed).Filters:( difficulties (5) )
-User has 239 finds (100 needed).Filters:( terrains (5) )
-}</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="869393346">
-          <groundspeak:date>2019-07-27T15:29:28Z</groundspeak:date>
-          <groundspeak:type>Write note</groundspeak:type>
-          <groundspeak:finder id="1738175">DaPoncho</groundspeak:finder>
-          <groundspeak:text encoded="False">**# 8470, DaPoncho &amp; Mišo (HaxyK &amp; BigBoss team) [:P]**
-
-faundit rajtnotovy - tož difikultiky ba boli v cajchu ale teréniky - toto bude na dlhšie. ale šak možno mekgajver dá a motyka vystrelí.
-
-***Ďakujeme za ukázanie zaujímavého miesta/No trade alebo iba nepamätáme***</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="868185188">
-          <groundspeak:date>2019-07-27T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="4382519">myspulka</groundspeak:finder>
-          <groundspeak:text encoded="False">16:36 Odloveno spolecne s pritelem yardoupb. Diky za challenge kes*
-
-[myspulka](https://www.geocaching.com/profile/?u=myspulka) použila [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") pro ověření, zda splnil podmínky této challenge keše s výsledkem: splněno.
-OK: AND{
-User has 106 finds (100 needed).Filters:( difficulties (5) )
-User has 100 finds (100 needed).Filters:( terrains (5) )</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="868183689">
-          <groundspeak:date>2019-07-27T23:36:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="2356620">yardapb</groundspeak:finder>
-          <groundspeak:text encoded="False">16:36
-#9253
-Výzvu v pohodě splněna, mimochodem u první challnenge v košicích [365 + 1 Day Callendar Challenge Cache](https://coord.info/GC3BZMF) jsem dal STF[:)].
-Odlov společně s přítelkyní myspulkou a hliníkovým kamarádem. Díky za tuto výzvu a kešku[:D].
-
-[yardapb](https://www.geocaching.com/profile/?u=yardapb) použil [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") pro ověření, zda splnil podmínky této challenge keše s výsledkem: splněno.</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="887355704">
-          <groundspeak:date>2019-07-14T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="5838742">Tomazzo69</groundspeak:finder>
-          <groundspeak:text encoded="False">#11 265, TFTC.
-
-Challenge completed.
-
-Aj kvôli tejto keške sme prišli do Košíc adekvátne vystrojení. V nedeľu ráno vládol na okolí primeraný pokoj a tak sme s t.o.o.l.-om prišli k objektu, MalaKešerka zdolala pár posledných metrov, zapísal som sa do logbooku a viac-menej nepozorovane sme sa pobrali ďalej.
-
-[Tomazzo69](https://www.geocaching.com/profile/?u=Tomazzo69) has used [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") to see if they qualified for this challenge and they did.
-
-OK: AND{
-User has 115 finds (100 needed).Filters:( difficulties (5) )
-User has 109 finds (100 needed).Filters:( terrains (5) )</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="862447267">
-          <groundspeak:date>2019-07-06T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="13615677">smejd.mahon</groundspeak:finder>
-          <groundspeak:text encoded="False">Odlovena společně se Šája1 během naší dovolené na Slovensku.
-Tady to bylo na pohodu. 
-Díky za výzvu i za keš.</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="862199896">
-          <groundspeak:date>2019-07-06T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="14401154">šája1</groundspeak:finder>
-          <groundspeak:text encoded="False">Nalezeno se smejd.mahon a naším geopudlem během dovolené na Slovensku.
-Tuto challenge splňujeme, tak jsme se stavili, poněvadž smejd challenge vyhledává 😀
-Díky ownerovi za keš.</groundspeak:text>
-        </groundspeak:log>
-        <groundspeak:log id="861295304">
-          <groundspeak:date>2019-07-03T19:00:00Z</groundspeak:date>
-          <groundspeak:type>Found it</groundspeak:type>
-          <groundspeak:finder id="5875541">alpateam</groundspeak:finder>
-          <groundspeak:text encoded="False">Dziękuję za mega wyzwanie ... wreszcie udało się spełnić wszystkie potrzebne warunki ... podjęte w czasie wyprawy na Węgry, dziś po kolejnej geowyprawie można logować, bo trochę D5 i T5 wpadło. TFTC! + fav .... 
-
-[alpateam](https://www.geocaching.com/profile/?u=alpateam) użył/a [Project-GC](https://project-gc.com/Challenges/GC7JKKZ/33079 "Project-GC Challenge Checker") aby sprawdzić czy spełnia warunki tego wyzwania. Tak, spełnia.
-
-OK: AND { User has 103 finds (100 needed).Filters:( difficulties (5) )
-User has 119 finds (100 needed).Filters:( terrains (5) ) }
-
-
-</groundspeak:text>
         </groundspeak:log>
       </groundspeak:logs>
       <groundspeak:travelbugs />
@@ -340,7 +158,7 @@ User has 119 finds (100 needed).Filters:( terrains (5) ) }
     <name>017JKKZ</name>
     <cmt>Bezplatný parking do 1 hodiny parkovania</cmt>
     <desc>Virtual stage</desc>
-    <url>https://www.geocaching.com/seek/wpt.aspx?WID=d2eb7ec6-11c8-42db-a6b3-34e724902a55</url>
+    <url>https://www.geocaching.com/seek/wpt.aspx?WID=d2eec6-11c8-42db-a6b3-34e702a55</url>
     <urlname>Virtual stage</urlname>
     <sym>Parking Area</sym>
     <type>Waypoint|Parking Area</type>
@@ -350,7 +168,7 @@ User has 119 finds (100 needed).Filters:( terrains (5) ) }
     <name>FN7JKKZ</name>
     <cmt />
     <desc>Final Location</desc>
-    <url>https://www.geocaching.com/seek/wpt.aspx?WID=e1aa1037-4a89-4b8f-9573-17ba59abc726</url>
+    <url>https://www.geocaching.com/seek/wpt.aspx?WID=e11037-4a89-4b8f-9573-17abc726</url>
     <urlname>Final Location</urlname>
     <sym>Final Location</sym>
     <type>Waypoint|Final Location</type>
