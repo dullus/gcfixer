@@ -34,9 +34,9 @@ function unescape(txt) {
 exports.unescape = unescape;
 function escape(txt, escapeTags = false) {
     let out = txt;
+    out = out.replace(/&/g, '&amp;');
     out = out.replace(/#@AMP@LT@#/g, FAKE_LT);
     out = out.replace(/#@AMP@GT@#/g, FAKE_GT);
-    out = out.replace(/&/g, '&amp;');
     out = out.replace(/ ,,/g, '"');
     if (escapeTags) {
         out = out.replace(/</g, '&lt;');
