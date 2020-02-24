@@ -1,9 +1,10 @@
 {
   "name": "gcfixer",
-  "version": "0.9.0",
-  "author": "Dulus",
+  "version": "0.9.1",
+  "author": "Dullus",
   "license": "GPL-3.0",
   "description": "Normalize Geocaching GPX file for Garmin devices",
+  "repository": "https://github.com/dullus/gcfixer.git",
   "keywords": [
     "Garmin",
     "GPX",
@@ -21,7 +22,6 @@
     "test": "jest --watchAll=true"
   },
   "dependencies": {
-    "@types/html-to-text": "^1.4.31",
     "chalk": "^3.0.0",
     "clean-html": "^1.5.0",
     "cli-progress": "^3.6.0",
@@ -37,6 +37,7 @@
     "@babel/preset-typescript": "^7.8.3",
     "@types/cli-progress": "^3.4.2",
     "@types/he": "^1.1.0",
+    "@types/html-to-text": "^1.4.31",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "@types/yargs": "^15.0.3",
