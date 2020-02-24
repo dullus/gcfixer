@@ -7,6 +7,7 @@ export interface ParserStream extends NodeJS.EventEmitter, NodeJS.WritableStream
 export interface Flag {
   desc: boolean;
   removeUrl: boolean;
+  stripHtml: boolean;
   text: boolean;
 }
 
@@ -16,4 +17,9 @@ export interface TagOptions {
   lastParent: string;
   level: number;
   name: string;
+}
+
+export interface Params {
+  stdout: boolean;
+  stripHtml: boolean;
 }

@@ -9,14 +9,14 @@ const Process_1 = require("./Process");
 const options = yargs_1.default
     .usage('Usage: -i <infile> [-o <outfile>]')
     .option('i', { alias: 'input', describe: 'Input file', type: 'string', demandOption: true })
-    .option('o', {
-    alias: 'output',
-    demandOption: false,
-    describe: 'Output file',
-    type: 'string'
-})
+    .option('o', { alias: 'output', demandOption: false, describe: 'Output file', type: 'string' })
+    .option('h', { alias: 'html', demandOption: false, describe: 'strip html', type: 'boolean' })
     .option('s', { alias: 'stdout', describe: 'pipe result to stdout', type: 'boolean', demandOption: false }).argv;
-const process = new Process_1.Process(options.input, options.stdout, options.output);
+const params = {
+    stdout: options.stdout,
+    stripHtml: options.html
+};
+const process = new Process_1.Process(options.input, params, options.output);
 process.run().then((caches) => {
     if (!options.stdout) {
         console.log(chalk_1.default.green(`✅ Done. ${caches} caches processed.`));

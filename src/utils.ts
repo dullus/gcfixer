@@ -4,33 +4,60 @@ import he from 'he';
 import unidecode from 'unidecode-plus';
 import htmlToText from 'html-to-text';
 
+const HTML_CLEAN = {
+  'add-break-around-tags': ['b', 'i', 'strong', 'em'],
+  'add-remove-attributes': ['style', 'class'],
+  'add-remove-tags': ['img', 'picture', 'a'],
+  'remove-comments': true,
+  'remove-empty-tags': ['p', 'div']
+};
+// chars < and > outside of tags can screw Garmin html parser, so we replace them with
+// visually similar from ASCII range. Possible are also unicode triangles &#9665; &#9655;
+const FAKE_LT = '&#171;'; // «
+const FAKE_GT = '&#187;'; // »
+
+/**
+ * Helps he.decode to process some oddities
+ */
 export function unescape(txt: string): string {
   let out = txt;
-  out = out.replace(/&lt;/g, '<');
-  out = out.replace(/&gt;/g, '>');
-  out = out.replace(/&amp;deg;/g, '°');
-  out = out.replace(/&amp;amp;/g, '#@AMP@#');
-  out = out.replace(/& /g, '#@AMP@##');
-  out = out.replace(/&amp; /g, '#@AMP@##');
+
+  out = out.replace(/&amp;lt;/g, '#@AMP@LT@#');
+  out = out.replace(/&amp;gt;/g, '#@AMP@GT@#');
+  out = out.replace(/&amp;/g, '&');
   out = out.replace(/ ,,/g, ' "');
   out = out.replace(/„/g, '"');
   out = out.replace(/“/g, '"');
+
   return out;
 }
 
-export function escape(txt: string): string {
+export function escape(txt: string, escapeTags = false): string {
   let out = txt;
   out = out.replace(/&/g, '&amp;');
-
-  out = out.replace(/#@AMP@##/g, '&amp; ');
-  out = out.replace(/#@AMP@#/g, '&amp;');
-  out = out.replace(/&amp;amp;/g, '&amp;');
+  out = out.replace(/#@AMP@LT@#/g, FAKE_LT);
+  out = out.replace(/#@AMP@GT@#/g, FAKE_GT);
   out = out.replace(/ ,,/g, '"');
 
-  out = out.replace(/</g, '-=');
-  out = out.replace(/>/g, '=-');
-  out = out.replace(/&amp;lt;/g, '-=');
-  out = out.replace(/&amp;gt;/g, '=-');
+  if (escapeTags) {
+    out = out.replace(/</g, '&lt;');
+    out = out.replace(/>/g, '&gt;');
+    out = out.replace(/°/g, '&#176;');
+  }
+
+  return out;
+}
+
+export function untag(txt: string): string {
+  let out = txt;
+
+  out = out.replace(/</g, FAKE_LT);
+  out = out.replace(/>/g, FAKE_GT);
+  out = out.replace(/&amp;lt;/g, FAKE_LT);
+  out = out.replace(/&amp;gt;/g, FAKE_GT);
+  out = out.replace(/#@AMP@LT@#/g, FAKE_LT);
+  out = out.replace(/#@AMP@GT@#/g, FAKE_GT);
+
   return out;
 }
 
@@ -42,24 +69,36 @@ export function processText(text: string, flag: I.Flag) {
   let out = text;
 
   if (flag.desc) {
+    // clean wrong html entities
     out = unescape(out);
-    cleaner.clean(out, (html) => {
+    // replace html entities
+    out = he.decode(out);
+    // sanitize html
+    cleaner.clean(out, HTML_CLEAN, (html) => {
       out = html;
     });
-    out = htmlToText.fromString(out, {
-      decodeOptions: { strict: false },
-      ignoreHref: true,
-      ignoreImage: true,
-      uppercaseHeadings: false
-    });
-    out = he.decode(out);
+    // remove html if needed
+    if (flag.stripHtml) {
+      out = htmlToText.fromString(out, {
+        decodeOptions: { strict: false },
+        ignoreHref: true,
+        ignoreImage: true,
+        uppercaseHeadings: false
+      });
+    }
+    // utf8 to ascii
     out = unidecode(out, { skipRanges: [[0xb0, 0xb0]] });
-    out = escape(out);
+    // escape
+    out = escape(out, !flag.stripHtml);
+    if (flag.stripHtml) {
+      out = untag(out);
+    }
   }
 
   if (flag.text) {
     out = unidecode(out, { skipRanges: [[0xb0, 0xb0]] });
     out = escape(out);
+    out = untag(out);
   }
 
   if (flag.removeUrl) {
