@@ -21,11 +21,13 @@
     "test": "jest --watchAll=true"
   },
   "dependencies": {
+    "@types/html-to-text": "^1.4.31",
     "chalk": "^3.0.0",
     "clean-html": "^1.5.0",
     "cli-progress": "^3.6.0",
     "html-to-text": "^5.1.1",
     "node-xml-stream": "^1.0.2",
+    "patch-package": "^6.2.0",
     "unidecode-plus": "^1.0.2",
     "yargs": "^15.1.0"
   },
@@ -35,14 +37,12 @@
     "@babel/preset-typescript": "^7.8.3",
     "@types/cli-progress": "^3.4.2",
     "@types/he": "^1.1.0",
-    "@types/html-to-text": "^1.4.31",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.0",
     "@types/yargs": "^15.0.3",
     "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
-    "patch-package": "^6.2.0",
     "prettier": "^1.19.1",
     "tslint": "^6.0.0",
     "tslint-config-prettier": "^1.18.0",
