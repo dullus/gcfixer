@@ -149,3 +149,14 @@ export function createTag(options: I.TagOptions) {
     tag
   };
 }
+
+/**
+ * Pairing elements in two arrays into one common object
+ * 
+ * @example zipObject(['a', 'b', 'c'], [1, 2, 3]) will give { a: 1, b: 2, c: 3 }.
+ */
+export function zipObject<T = any>(props: string[], values: T[]): {[key: string]: T} {
+  return props.reduce((prev, prop, i) => {
+    return Object.assign(prev, { [prop]: values[i] });
+  }, {});
+}

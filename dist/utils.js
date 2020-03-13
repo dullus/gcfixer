@@ -136,4 +136,15 @@ function createTag(options) {
     };
 }
 exports.createTag = createTag;
+/**
+ * Pairing elements in two arrays into one common object
+ *
+ * @example zipObject(['a', 'b', 'c'], [1, 2, 3]) will give { a: 1, b: 2, c: 3 }.
+ */
+function zipObject(props, values) {
+    return props.reduce((prev, prop, i) => {
+        return Object.assign(prev, { [prop]: values[i] });
+    }, {});
+}
+exports.zipObject = zipObject;
 //# sourceMappingURL=utils.js.map
