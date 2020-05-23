@@ -12,8 +12,9 @@ class Spinner {
 
   public rotate(): void {
     rdl.cursorTo(process.stdout, 0);
-    process.stdout.write(this.shapes[this.pos++]);
-    if (this.pos > this.shapes.length) {
+    process.stdout.write(this.shapes[this.pos]);
+    this.pos++;
+    if (this.pos >= this.shapes.length) {
       this.pos = 0;
     }
   }

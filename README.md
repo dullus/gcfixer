@@ -2,7 +2,7 @@
 
 [![NPM Stats](https://nodei.co/npm/gcfixer.png)](https://npmjs.org/package/gcfixer/)
 
-![](https://img.shields.io/badge/version-0.9.0-red)
+![](https://img.shields.io/badge/version-0.9.2-red)
 ![](https://img.shields.io/badge/languages-TypeScript-blue)
 ![](https://img.shields.io/badge/node-%3E%3D10.0.0-brightgreen)
 ![](https://img.shields.io/badge/npm-%3E%3D6.0.0-brightgreen)

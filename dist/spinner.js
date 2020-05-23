@@ -12,8 +12,9 @@ class Spinner {
     }
     rotate() {
         readline_1.default.cursorTo(process_1.default.stdout, 0);
-        process_1.default.stdout.write(this.shapes[this.pos++]);
-        if (this.pos > this.shapes.length) {
+        process_1.default.stdout.write(this.shapes[this.pos]);
+        this.pos++;
+        if (this.pos >= this.shapes.length) {
             this.pos = 0;
         }
     }
